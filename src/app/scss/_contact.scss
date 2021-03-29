@@ -1,0 +1,77 @@
+.contact {
+  // background-color: $gunMetal;
+
+  &__form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  label {
+    text-transform: capitalize;
+  }
+
+  &__form-control {
+    display: flex;
+    flex-direction: column;
+
+    input[type='text'],
+    textarea {
+      color: $gray;
+      font-family: 'Teko', sans-serif;
+      letter-spacing: $letter-spacing;
+      line-height: 1.5rem;
+      font-weight: 400;
+      font-size: $font-sm;
+      padding: 10px;
+      padding-bottom: 0px;
+      background-color: transparent;
+      transition: $transition;
+
+      &::placeholder {
+        color: $darkGray;
+
+        font-size: $font-sm;
+      }
+
+      &:focus {
+        outline: 0;
+        border-color: $starCommandBlue;
+      }
+    }
+
+    textarea {
+      resize: none;
+      border: 1px solid $lightGray;
+      height: 200px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid $lightGray;
+    }
+
+    small {
+      visibility: hidden;
+      color: $fuzzyWuzzy;
+    }
+
+    &.error {
+      small {
+        visibility: visible;
+      }
+
+      input[type='text'],
+      textarea {
+        border-color: $fuzzyWuzzy;
+      }
+    }
+
+    // &.success {
+    //   input[type='text'],
+    //   textarea {
+    //     // border-color: $fuzzyWuzzy;
+    //   }
+    // }
+  }
+}

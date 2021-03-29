@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/62deb45e19.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./src/dist/style.css" />
+    <script type="module" src="./src/app/js/app.js" defer></script>
+    <title>Shafook Fadil | Web Designer | Programmer</title>
+  </head>
+  <body>
+    <header class="nav">
+      <nav>
+        <div class="nav__overlay"></div>
+        <div class="nav__center container container--px">
+          <div class="nav__logo">
+            <div id="logoBtn" href="/home" class="scroll-link logo">SF</div>
+
+            <button id="hamburgerBtn" class="toggle hide-for-desktop">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div class="nav__links-container">
+            <div class="nav__links hide-for-mobile">
+              <a href="#home" class="scroll-link nav-link">home</a>
+              <a href="#projects" class="scroll-link nav-link">projects</a>
+              <a href="#skills" class="scroll-link nav-link">skills</a>
+              <a href="#about-me" class="scroll-link nav-link">about me</a>
+              <a href="#contact-me" class="scroll-link nav-link">contact me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- nav end -->
+    </header>
+
+    <!-- hero -->
+    <section id="home" class="hero">
+      <div class="hero__banner container container--px">
+        <div class="hero__name">
+          <span>Hi, I am</span>
+          <h1>Shafook Fadil</h1>
+          <span>Web Designer | Programmer</span>
+          <div class="hero__btns">
+            <a href="/projects" class="button scroll-link">projects</a>
+            <a href="/contact-me" class="button scroll-link">hire me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container container--pall">
+        <div class="projects__title section-title">
+          <h2>projects</h2>
+        </div>
+        <section class="projects__items"></section>
+      </div>
+    </section>
+    <!-- projects end -->
+
+    <!-- skills -->
+    <section id="skills" class="skills">
+      <div class="container container--pall">
+        <div class="skills__title section-title">
+          <h2>my skills</h2>
+        </div>
+        <div class="skills__content">
+          <div class="skills__icons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-java"></i>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+            molestias maxime fugit placeat consequatur totam dicta odio nulla
+            exercitationem ullam. Quidem, nostrum!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- skills end -->
+
+    <!-- about -->
+    <section id="about-me" class="about">
+      <div class="container container--pall">
+        <div class="about__title section-title">
+          <h2>About Me</h2>
+        </div>
+        <section class="about__cards content"></section>
+      </div>
+    </section>
+    <!-- about end -->
+    <!-- contact -->
+    <section id="contact-me" class="contact">
+      <div class="container container--pall">
+        <div class="contact__title section-title">
+          <h2>contact me</h2>
+        </div>
+        <div class="contact__form">
+          <form action="submit" method="POST" id="form">
+            <div class="contact__form-control">
+              <label for="name">your name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                autocomplete="off"
+              />
+              <small>error message</small>
+            </div>
+
+            <div class="contact__form-control">
+              <label for="email">email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                autocomplete="off"
+              />
+              <small>error message</small>
+            </div>
+
+            <div class="contact__form-control">
+              <label for="subject">subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                autocomplete="off"
+              />
+              <small>error message</small>
+            </div>
+
+            <div class="contact__form-control">
+              <label for="message">message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+              ></textarea>
+              <small>error message</small>
+            </div>
+
+            <button type="submit" class="button submit">submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <div class="container container--pall">
+        <div class="footer__social">
+          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

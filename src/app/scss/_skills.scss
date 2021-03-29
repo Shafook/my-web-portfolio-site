@@ -1,0 +1,52 @@
+.skills {
+  // background-color: $gunMetal;
+  position: relative;
+  // z-index: 0;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 150%;
+  //   top: -25%;
+  //   left: 0;
+  //   background-color: $gunMetal;
+  //   transform: skewY(-5deg);
+  //   z-index: -1;
+  // }
+
+  &__icons {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    text-align: center;
+    color: $starCommandBlue;
+    margin-bottom: 2rem;
+  }
+
+  .fab {
+    font-size: 6.5rem;
+  }
+
+  // .fa-html5 {
+  //   color: #e34c26;
+  // }
+
+  // .fa-css3 {
+  //   color: #264de4;
+  // }
+}
