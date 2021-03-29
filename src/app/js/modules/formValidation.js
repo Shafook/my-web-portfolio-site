@@ -20,8 +20,22 @@ export default () => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    checkInputs();
+    if (checkInputs() === 0) {
+      console.log('success');
+      submitForm();
+    }
   });
+};
+
+const submitForm = () => {
+  let formData = new FormData(form);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log('Form successfully submitted'))
+    .catch((error) => alert(error));
 };
 
 const checkInputs = () => {
@@ -30,31 +44,40 @@ const checkInputs = () => {
   const subjectValue = subject.value.trim();
   const messageValue = message.value.trim();
 
+  let fails = 0;
+
   if (nameValue === '') {
     setErrorFor(fullname, 'Name cannot be blank');
+    fails++;
   } else {
     setSuccessFor(fullname);
   }
 
   if (emailValue === '') {
     setErrorFor(email, 'Email cannot be blank');
+    fails++;
   } else if (!isEmail(emailValue)) {
     setErrorFor(email, 'Email is not valid');
+    fails++;
   } else {
     setSuccessFor(email);
   }
 
   if (subjectValue === '') {
     setErrorFor(subject, 'Subject cannot be blank');
+    fails++;
   } else {
     setSuccessFor(subject);
   }
 
   if (messageValue === '') {
     setErrorFor(message, 'Message cannot be blank');
+    fails++;
   } else {
     setSuccessFor(message);
   }
+
+  return fails;
 };
 
 const setErrorFor = (input, message) => {
@@ -64,11 +87,13 @@ const setErrorFor = (input, message) => {
   small.innerText = message;
 
   formControl.classList.add('error');
+  return false;
 };
 
 const setSuccessFor = (input) => {
   const formControl = input.parentElement;
   formControl.classList.remove('error');
+  return true;
 };
 
 const isEmail = (email) => {
