@@ -122,6 +122,8 @@
             action="submit"
             name="contact"
             method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             data-netlify="true"
             id="form"
           >
@@ -170,6 +172,8 @@
               ></textarea>
               <small>error message</small>
             </div>
+
+            <div data-netlify-recaptcha="true"></div>
 
             <button type="submit" class="button submit">submit</button>
           </form>
