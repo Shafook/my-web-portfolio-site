@@ -28,10 +28,15 @@
       background-color: transparent;
       transition: $transition;
 
+      &:focus {
+        &::placeholder {
+          opacity: 0.6;
+        }
+      }
       &::placeholder {
         color: $darkGray;
-
         font-size: $font-sm;
+        transition: $transition;
       }
 
       &:focus {

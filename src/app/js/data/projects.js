@@ -1,26 +1,27 @@
 export default [
   {
-    title: 'project 1',
+    title: 'Audiophile Ecommerce',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    image:
-      'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
-    demoLink: '#',
-    codeLink: '#',
+    image: './src/images/audiophile-ecommerce.png',
+    demoLink: 'https://audiophile-ecommerce-react.netlify.app/',
+    codeLink: 'https://github.com/Shafook/Audiophile-Ecommerce',
+    languages: ['fab fa-react', 'fab fa-css3'],
   },
   {
-    title: 'project 2',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    image:
-      'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
-    demoLink: '#',
-    codeLink: '#',
+    title: 'Rock-Paper-Scissors-Lizard-Spock App',
+    description:
+      'A rock paper scissors lizard spock game. Used Typescript to learn. Design from frontendmentor.io',
+    image: './src/images/rpsls-image.png',
+    demoLink: 'https://rpsls-react.netlify.app/',
+    codeLink: 'https://github.com/Shafook/rock-paper-scissors',
+    languages: ['fab fa-react', 'fab fa-css3'],
   },
   {
-    title: 'project 3',
+    title: 'url shortening',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    image:
-      'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
-    demoLink: '#',
-    codeLink: '#',
+    image: './src/images/url-shortening.png',
+    demoLink: 'https://url-shortening-js.netlify.app/',
+    codeLink: 'https://github.com/Shafook/URL-Shortening-JS',
+    languages: ['fab fa-react', 'fab fa-css3'],
   },
 ];

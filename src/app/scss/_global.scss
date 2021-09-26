@@ -71,11 +71,9 @@ a:visited {
   text-decoration: none;
 }
 
-a.nav-link {
-  color: $header;
-}
-
-a,
+a.nav-link,
+a.social,
+a.button,
 button {
   cursor: pointer;
   position: relative;
@@ -143,7 +141,9 @@ button {
 }
 
 @include breakpoint-up(large) {
-  a,
+  a.nav-link,
+  a.social,
+  a.button,
   button {
     &::before,
     &::after {
@@ -175,7 +175,12 @@ button {
   }
 }
 
-.button {
+a.nav-link {
+  color: $header;
+}
+
+.button,
+a.button {
   display: flex;
   justify-content: center;
   align-items: center;
