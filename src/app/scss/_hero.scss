@@ -43,7 +43,7 @@
     z-index: 0;
 
     @include breakpoint-up(large) {
-      content: '';
+      // content: '';
     }
   }
 

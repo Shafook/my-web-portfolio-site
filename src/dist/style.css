@@ -525,12 +525,6 @@ a.button.submit {
   z-index: 0;
 }
 
-@media (min-width: 64em) {
-  .hero::after {
-    content: '';
-  }
-}
-
 .hero::before {
   content: '';
   position: absolute;
