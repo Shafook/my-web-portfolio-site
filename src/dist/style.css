@@ -45,6 +45,10 @@ h2 {
   font-size: 3rem;
 }
 
+h4 {
+  margin-bottom: 0;
+}
+
 .section-title {
   text-align: center;
 }
@@ -812,10 +816,10 @@ a.button.submit {
 .skills__icons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   gap: 3rem;
   text-align: center;
   color: #3fa7d6;
@@ -841,7 +845,77 @@ a.button.submit {
 }
 
 .skills .fab {
-  font-size: 6.5rem;
+  font-size: 3.5rem;
+}
+
+@media (min-width: 40em) {
+  .skills .fab {
+    font-size: 6.5rem;
+  }
+}
+
+.skills__languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 40em) {
+  .skills__languages {
+    gap: 0rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.skills__languages div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.skills__languages div p {
+  margin-bottom: 1rem;
+}
+
+.skills__languages .front-end,
+.skills__languages .back-end {
+  position: relative;
+}
+
+.skills__languages .front-end::after,
+.skills__languages .back-end::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 1px;
+  background-color: #d16666aa;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 40em) {
+  .skills__languages .front-end::after,
+  .skills__languages .back-end::after {
+    top: 50%;
+    left: 100%;
+    width: 1px;
+    height: 80%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 .projects {

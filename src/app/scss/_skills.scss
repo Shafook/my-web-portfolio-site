@@ -19,8 +19,8 @@
     // flex-wrap: wrap;
     // justify-content: space-evenly;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
 
     @include breakpoint-up(medium) {
@@ -39,9 +39,70 @@
   }
 
   .fab {
-    font-size: 6.5rem;
+    font-size: 3.5rem;
+
+    @include breakpoint-up(medium) {
+      font-size: 6.5rem;
+    }
   }
 
+  &__languages {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include breakpoint-up(medium) {
+      gap: 0rem;
+      flex-direction: row;
+    }
+
+    // justify-content: space-between;
+    div {
+      flex: 1;
+      text-align: center;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .front-end,
+    .back-end {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 1rem);
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        height: 1px;
+        background-color: #d16666aa;
+        transform: translateX(-50%);
+        @include breakpoint-up(medium) {
+          top: 50%;
+          left: 100%;
+          width: 1px;
+          height: 80%;
+          transform: translateY(-50%);
+        }
+      }
+      // @include breakpoint-up(medium) {
+      //   &::after {
+      //     content: '';
+      //     position: absolute;
+      //     top: 50%;
+      //     left: 100%;
+      //     right: 0;
+      //     bottom: 0;
+      //     width: 1px;
+      //     height: 80%;
+      //     background-color: #d16666aa;
+      //     transform: translateY(-50%);
+      //   }
+      // }
+    }
+  }
   // .fa-html5 {
   //   color: #e34c26;
   // }
