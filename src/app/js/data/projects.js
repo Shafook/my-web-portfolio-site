@@ -24,6 +24,6 @@ export default [
     image: './src/images/url-shortening.png',
     demoLink: 'https://url-shortening-js.netlify.app/',
     codeLink: 'https://github.com/Shafook/URL-Shortening-JS',
-    languages: ['fab fa-react', 'fab fa-html5'],
+    languages: ['fab fa-html5', 'fab fa-css3'],
   },
 ];
