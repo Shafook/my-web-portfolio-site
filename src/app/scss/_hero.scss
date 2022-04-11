@@ -85,6 +85,10 @@
       font-size: 2rem;
       line-height: 1;
     }
+
+    p {
+      color: $header;
+    }
   }
 
   &__btns {

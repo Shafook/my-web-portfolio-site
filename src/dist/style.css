@@ -573,6 +573,10 @@ a.button.submit {
   line-height: 1;
 }
 
+.hero__name p {
+  color: #f1fffa;
+}
+
 .hero__btns {
   width: 100%;
   display: -webkit-box;
