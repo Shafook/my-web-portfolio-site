@@ -1,7 +1,8 @@
 export default [
   {
     title: 'Audiophile Ecommerce',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description:
+      'An example ecommerce website selling audio gears. Design from frontendmentor.io',
     image: './src/images/audiophile-ecommerce.png',
     demoLink: 'https://audiophile-ecommerce-react.netlify.app/',
     codeLink: 'https://github.com/Shafook/Audiophile-Ecommerce',
@@ -18,10 +19,11 @@ export default [
   },
   {
     title: 'url shortening',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description:
+      'A single page website that shortens url using a public API. Design from frontendmentor.io',
     image: './src/images/url-shortening.png',
     demoLink: 'https://url-shortening-js.netlify.app/',
     codeLink: 'https://github.com/Shafook/URL-Shortening-JS',
-    languages: ['fab fa-react', 'fab fa-css3'],
+    languages: ['fab fa-react', 'fab fa-html5'],
   },
 ];
