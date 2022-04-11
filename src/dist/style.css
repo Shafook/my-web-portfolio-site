@@ -578,7 +578,9 @@ a.button.submit {
 }
 
 .hero__name p {
+  margin-top: 1rem;
   color: #f1fffa;
+  font-size: 1.75rem;
 }
 
 .hero__btns {
@@ -1189,5 +1191,12 @@ a.button.submit {
   color: #3fa7d6;
   display: inline-block;
   line-height: 0;
+}
+
+.footer__created-by {
+  text-align: center;
+  color: #1f6d93;
+  font-size: 1.15rem;
+  margin-top: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */

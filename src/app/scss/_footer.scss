@@ -13,4 +13,11 @@
       line-height: 0;
     }
   }
+
+  &__created-by {
+    text-align: center;
+    color: $darkGray;
+    font-size: $font-sm;
+    margin-top: 1.1rem;
+  }
 }
